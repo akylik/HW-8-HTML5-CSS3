@@ -68,10 +68,8 @@ aside {
    width: 100%;
    display: flex;
    flex-direction: column;
-
 }
 .menu {
-   /* margin-top: 44px; */
 }
 .menu ul li a {
    font-family: 'Baloo Bhai 2';
@@ -92,10 +90,8 @@ header {
    max-width: 1125px;
    width: 100%;
    display: flex;
-   justify-content: space-between;
-   margin-left: 40px;
+   margin-left: 70px;
    margin-top: 31px;
-
 }
 .header_main {
    min-width: 620px;
@@ -105,7 +101,7 @@ header {
    border-radius: 14px;
    padding: 46px 0 0 31px;
    position: relative;
-   margin-right: 20px;
+   margin-right: 60px;
 }
 .header_main img {
    position: absolute;
@@ -157,6 +153,7 @@ h1 {
    padding-left: 40px;
    background: url(../img/icons/icon_search.png) 15px center no-repeat, #F5F5F7;
    background-size: 21px;
+   margin-right: 10px;
 }
 .header_progress {
    display: flex;
@@ -166,9 +163,11 @@ h1 {
    max-width: 200px;
    background: #F5F5F7;
    border-radius: 14px;
-   padding: 16px 30px 16px 30px;
+   padding: 16px 20px 16px 20px;
    display: flex;
    align-items: center;
+}
+.progress__:first-child {
    margin-right: 20px;
 }
 .progress__number {
@@ -182,7 +181,7 @@ h1 {
 .progress__text {
    font-family: 'Roboto';
    font-size: 16px;
-   /* line-height: 24px; */
+   line-height: 24px;
    color: #000000;
 }
 main {
@@ -190,10 +189,12 @@ main {
    width: 100%;
    display: flex;
    justify-content: space-between;
-   margin-left: 40px;
+   margin-left: 70px;
    margin-top: 24px;
 }
 .left_column {
+   min-width: 620px;
+   margin-right: 60px;
 }
 .left_form_wrapper {
    min-width: 620px;
@@ -201,7 +202,6 @@ main {
    display: flex;
    justify-content: space-between;
    align-items: center;
-
 }
 .left_form {
    display: flex;
@@ -231,7 +231,13 @@ h2 {
    line-height: 26px;
    color: #000000;
 }
-
+h3 {
+   font-family: 'Baloo Bhai 2';
+   font-weight: 800;
+   font-size: 24px;
+   line-height: 38px;
+   color: #000000;
+}
 .left_title {
 }
 .left_title p {
@@ -265,8 +271,139 @@ h2 {
    line-height: 15px;
    color: #FFFFFF;
 }
-
-
-
+.courses {
+   min-width: 620px;
+   width: 100%;
+   margin-top: 39px;
+   /* display: flex;
+   justify-content: space-between;
+   align-items: center; */
+}
+.courses_link {
+   display: flex;
+   margin-top: 16px;
+}
+.courses_link li a {
+   font-family: 'Baloo Bhai 2';
+   font-weight: 800;
+   font-size: 16px;
+   /* line-height: 26px; */
+   color: #000000;
+   opacity: 0.3;
+   margin-right: 30px;
+}
+.courses_link li a:hover {
+   opacity: 1;
+}
+.courses_item {
+   min-width: 620px;
+   width: 100%;
+   background: #F5F5F7;
+   border-radius: 14px;
+   display: flex;
+   align-items: center;
+   padding: 9px 23px 9px 9px;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+.courses_img {
+   width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    position: relative;
+}
+.courses_img img {
+   position: absolute;
+   top: 25%;
+   left: 25%;
+}
+.courses_title p {
+   font-family: 'Roboto';
+   font-size: 13px;
+   line-height: 15px;
+   color: #000000;
+}
+.courses_time {
+   position: relative;
+}
+.courses_time p {
+   font-family: 'Roboto';
+   font-size: 13px;
+   line-height: 15px;
+   color: #000000;
+   padding-left: 25px;
+}
+.courses_time p::before {
+   content: '';
+   background: url(../img/icons/main_clock.png) 0 0 no-repeat;
+   width: 17px;
+   height: 17px;
+   position: absolute;
+   top: -2px;
+   left: 0px;
+}
+.courses_rating {
+   position: relative;
+}
+.courses_rating p {
+   font-family: 'Roboto';
+   font-size: 13px;
+   line-height: 15px;
+   color: #000000;
+   padding-left: 25px;
+}
+.courses_rating p::before {
+   content: '';
+   background: url(../img/icons/main_flame.png) 0 0 no-repeat;
+   width: 17px;
+   height: 17px;
+   position: absolute;
+   top: -3px;
+   left: 0px;
+}
 .right_column {
+   min-width: 450px;
+}
+.statistics_filtr {
+   max-width: 450px;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   padding-right: 10px;
+}
+.select {
+   /* width: 88px;
+   height: 32px; */
+   background: #F5F5F7;
+   border-radius: 8px;
+   padding: 8px 10px 8px 16px;
+}
+.statistics img {
+   margin-top: 32px;
+}
+.lern {
+   max-width: 440px;
+   background: #F5F5F7;
+   border-radius: 14px;
+   margin-top: 49px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 24px;
+}
+.lern_info {
+   max-width: 180px;
+}
+.lern_info button {
+   margin-top: 30px;
+}
+.lern_info p {
+   font-family: 'Roboto';
+   font-size: 16px;
+   line-height: 24px;
+   color: #000000;
+}
+.lern_img {
+   margin-right: 20px;
 }
